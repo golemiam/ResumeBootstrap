@@ -118,44 +118,9 @@
         <div class="col">
                 <div class="badge badge-primary text-wrap" style="width: 36rem;">
         <span id="greeting" class="greeting"></span>
-<p id="p1"></p>
-
-        <script>
-var mydate = newDate().gethour()            
-        // function askUserForName() {
-        //     var name = prompt('Please enter your name:');
-        //     thankYou(name)
-        //     document.getElementById("p1").innerHTML = "Your Name is " + name;
-        //     var myDate = new Date();
-        //     document.getElementById("date").innerHTML ="The hour is " + myDate.gethours();
-        // }
-        var day; 
-            var date = new Date().getHour();
-            switch(new Date().getHour()){
-                case 0:
-                    hour>=5 && hour<= 12;
-                    alert("Good Morning " + name + " I hope your breakfast is awesome")
-                    
-                    break;
-                case 1:
-                hour>=12 && hour<=18;
-                    alert("Good afternoon " + name + " I hope your lunch is awesome")
-                    break;
-                case 2:
-                hour>=18 && hour<=23.99;
-                    alert("Good Evening " + name + " I hope your dinner is awesome")
+<h1 id="p1"></h1>
 
 
-            
-
-        }
-        askUserForName();
-        function thankYou(name) {
-            var message = 'Hi, ' + name + '! Thank you for reviewing my resume website'
-            //alert(message);
-            document.getElementById('greeting').innerHTML = message;
-        }
-        </script>
         </div>
         </div>
 
@@ -257,7 +222,43 @@ var mydate = newDate().gethour()
     <footer>copyright Robbie Platt 2019</footer>
 
 
+    <script>
+           
+            function askUserForName() {
+                var name = prompt('Please enter your name:');
+                thankYou(name)
+            //     document.getElementById("p1").innerHTML = "Your Name is " + name;
+            //     var myDate = new Date();
+            //     document.getElementById("date").innerHTML ="The hour is " + myDate.gethours();
+            }
+            askUserForName();
+        // function thankYou(name) {
+        //     var message = 'Hi, ' + name + ' !Thank you for reviewing my resume website'
+        //     document.getElementById('p1').innerHTML = message;
+        // }
+        var hour; 
+            var date = new Date().getHour();
+            switch(new Date().getHour()){
+                case 0:
+                    hour>=5 && hour<= 12;
+                    alert("Good Morning " + name + " I hope your breakfast is awesome")
+                    document.getElementById('p1').innerHTML = message;
+                    break;
+                case 1:
+                hour>=12 && hour<=18;
 
+                    alert("Good afternoon " + name + " I hope your lunch is awesome")
+                    document.getElementById('p1').innerHTML = message;
+                    break;
+                case 2:
+                hour>=18 && hour<=23.99;
+                function thankYou(name) {
+                    var message = "Good Evening " + name + " I hope your dinner is awesome"
+                    document.getElementById('p1').innerHTML = message;
+                    }
+                    
+        }
+            </script>
 
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
